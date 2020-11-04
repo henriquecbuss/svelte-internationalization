@@ -1,0 +1,13 @@
+{
+    "app": {
+        "title": "الناخب المتمرد",
+        "slogan": "شخصياتك المفضلة في حرب النجوم"
+    },
+
+    "hello_user": "مرحبًا {name}!",
+
+    "footer": "ملحق لمقال <a href=\"{phraseUrl}\">مدونة Phrase</a>. صنع بواسطة <a href=\"{svelteUrl}\">Svelte</a> و <a href=\"{bulmaUrl}\">Bulma</a>.",
+
+    "total_votes": "{n, plural, =0 {لا توجد أصوات بعد} one {صوت #} two {صوتان} few {# أصوات} other {# صوت}}"
+
+}

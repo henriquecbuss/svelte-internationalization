@@ -1,30 +1,45 @@
 <script>
-	export let name;
+  import Header from "./components/Layout/Header.svelte";
+  import Footer from "./components/Layout/Footer.svelte";
+  import CharacterList from "./components/Characters/CharacterList.svelte";
+  import LocaleSelector from "./components/UI/LocaleSelector.svelte";
+  import { _, setupI18n, isLocaleLoaded, locale, dir } from "./services/i18n";
+
+  setupI18n();
+
+  $: if (document.dir !== $dir) {
+    document.dir = $dir;
+  }
+
+  $: if ($isLocaleLoaded) {
+    document.title = $_("app.title");
+  }
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 </style>
+
+{#if $isLocaleLoaded}
+  <div class="container">
+    <Header />
+
+    <h1>{$_('hello_user', { values: { name: 'Adam' } })}</h1>
+
+    <LocaleSelector
+      value={$locale}
+      on:locale-changed={(e) => setupI18n({ withLocale: e.detail })} />
+
+    <main role="main">
+      <CharacterList />
+    </main>
+  </div>
+
+  <Footer />
+{:else}
+  <p>Loading...</p>
+{/if}
