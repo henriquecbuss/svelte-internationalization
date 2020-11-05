@@ -1,0 +1,32 @@
+{
+    "app": {
+        "title": "国際化"
+    },
+
+    "main": {
+        "strings": {
+            "title": "文字列",
+            "simple": "シンプル",
+            "ok": "OK",
+            "cancel": "キャンセル",
+            "confirm": "確認",
+            "hello_world": "こんにちは世界！",
+            "interpolating": "補間",
+            "hello_user": "こんにちは、{name}！"
+        },
+
+        "dates": {
+            "title": "日時",
+            "date": "日付",
+            "time": "時間"
+        },
+
+        "numbers": {
+            "title": "数字",
+            "plain_number": "単純な数字",
+            "currency": "通貨",
+            "plural": "複数形",
+            "counter_format": "{n, plural, =0 {クリックなし} other {#クリック}}"
+        }
+    }
+}

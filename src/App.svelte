@@ -167,6 +167,9 @@
           <h4 class="card__item">
             {$number(numberValue, { style: 'currency', currency: 'BRL' })}
           </h4>
+          <h4 class="card__item">
+            {$number(numberValue, { style: 'currency', currency: 'JPY' })}
+          </h4>
         </div>
       </div>
     </div>

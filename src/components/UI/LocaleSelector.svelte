@@ -19,7 +19,9 @@
 <div class="locale-selector">
   <select {value} on:blur={handleLocaleChange} on:change={handleLocaleChange}>
     {#each Object.keys(locales) as locale}
-      <option value={locale}>{locales[locale]}</option>
+      <option value={locale} selected={locale === $value}>
+        {locales[locale]}
+      </option>
     {/each}
   </select>
 </div>

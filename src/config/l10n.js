@@ -1,12 +1,13 @@
 // Locales our app supports
 const locales = {
+    pt: "Português",
     en: "English",
     ar: "عربي",
-    pt: "Português"
+    ja: "日本人"
 }
 
 // Locale to show when we dont' support the requested locale
-const fallbackLocale = "en";
+const fallbackLocale = "pt";
 
 export {
     locales,
