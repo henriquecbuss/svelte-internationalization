@@ -12,10 +12,10 @@
   .loader {
     font-size: 10px;
     position: relative;
-    border-top: 1.1em solid rgba(224, 61, 97, 0.2);
-    border-right: 1.1em solid rgba(224, 61, 97, 0.2);
-    border-bottom: 1.1em solid rgba(224, 61, 97, 0.2);
-    border-left: 1.1em solid rgb(224, 61, 97);
+    border-top: 1.1em solid rgba(255, 60, 0, 0.2);
+    border-right: 1.1em solid rgba(255, 60, 0, 0.2);
+    border-bottom: 1.1em solid rgba(255, 60, 0, 0.2);
+    border-left: 1.1em solid rgb(255, 60, 0);
 
     -webkit-animation: load8 1.1s infinite linear;
     animation: load8 1.1s infinite linear;
