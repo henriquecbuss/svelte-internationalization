@@ -23,7 +23,9 @@
     document.title = $_("app.title");
   }
 
+  let numberValue = 123456.789;
   let interpolatorValue = "i18n";
+  const dateValue = new Date();
 </script>
 
 <style>
@@ -115,37 +117,38 @@
 
         <div class="card__sub-item">
           <h2 class="card__sub-title">{$_('main.dates.date')}</h2>
-          <h4 class="card__item">{$date(new Date(), { format: 'full' })}</h4>
-          <h4 class="card__item">{$date(new Date(), { format: 'long' })}</h4>
-          <h4 class="card__item">{$date(new Date(), { format: 'medium' })}</h4>
-          <h4 class="card__item">{$date(new Date(), { format: 'short' })}</h4>
+          <h4 class="card__item">{$date(dateValue, { format: 'full' })}</h4>
+          <h4 class="card__item">{$date(dateValue, { format: 'long' })}</h4>
+          <h4 class="card__item">{$date(dateValue, { format: 'medium' })}</h4>
+          <h4 class="card__item">{$date(dateValue, { format: 'short' })}</h4>
         </div>
 
         <div class="card__sub-item">
           <h2 class="card__sub-title">{$_('main.dates.time')}</h2>
-          <h4 class="card__item">{$time(new Date(), { format: 'long' })}</h4>
-          <h4 class="card__item">{$time(new Date(), { format: 'medium' })}</h4>
-          <h4 class="card__item">{$time(new Date(), { format: 'short' })}</h4>
+          <h4 class="card__item">{$time(dateValue, { format: 'long' })}</h4>
+          <h4 class="card__item">{$time(dateValue, { format: 'medium' })}</h4>
+          <h4 class="card__item">{$time(dateValue, { format: 'short' })}</h4>
         </div>
       </div>
 
       <div class="card">
         <h1 class="card__title">{$_('main.numbers.title')}</h1>
+        <input type="text" bind:value={numberValue} />
 
         <div class="card__sub-item">
           <h2 class="card__sub-title">{$_('main.numbers.plain_number')}</h2>
-          <h4 class="card__item">{$number(123456.789)}</h4>
+          <h4 class="card__item">{$number(numberValue)}</h4>
           <h4 class="card__item">
-            {$number(123456.789, { style: 'percent' })}
+            {$number(numberValue, { style: 'percent' })}
           </h4>
           <h4 class="card__item">
-            {$number(123456.789, {
+            {$number(numberValue, {
               notation: 'compact',
               compactDisplay: 'long',
             })}
           </h4>
           <h4 class="card__item">
-            {$number(123456.789, { notation: 'compact' })}
+            {$number(numberValue, { notation: 'compact' })}
           </h4>
         </div>
         <div class="card__sub-item">
@@ -156,13 +159,13 @@
         <div class="card__sub-item">
           <h2 class="card__sub-title">{$_('main.numbers.currency')}</h2>
           <h4 class="card__item">
-            {$number(123456.789, { style: 'currency', currency: 'USD' })}
+            {$number(numberValue, { style: 'currency', currency: 'USD' })}
           </h4>
           <h4 class="card__item">
-            {$number(123456.789, { style: 'currency', currency: 'AED' })}
+            {$number(numberValue, { style: 'currency', currency: 'AED' })}
           </h4>
           <h4 class="card__item">
-            {$number(123456.789, { style: 'currency', currency: 'BRL' })}
+            {$number(numberValue, { style: 'currency', currency: 'BRL' })}
           </h4>
         </div>
       </div>
