@@ -43,6 +43,7 @@
 
   .app-title {
     margin-top: 0;
+    color: #ff3c00;
   }
 
   .card-list {
@@ -54,9 +55,10 @@
 
   .card {
     display: inline-block;
-    border-radius: 1em;
     padding: 1em 2em;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    background: #ff3c00;
+    color: white;
   }
 
   .card__title {
@@ -68,7 +70,6 @@
   }
 
   .card__item {
-    color: rgb(224, 61, 97);
     font-size: 1.2rem;
   }
 
