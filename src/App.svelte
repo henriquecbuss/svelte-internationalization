@@ -1,6 +1,7 @@
 <script>
   import Counter from "./components/UI/Counter.svelte";
   import LocaleSelector from "./components/UI/LocaleSelector.svelte";
+  import Spinner from "./components/UI/Spinner.svelte";
   import {
     _,
     dir,
@@ -67,6 +68,13 @@
   .card__item {
     color: rgb(224, 61, 97);
     font-size: 1.2rem;
+  }
+
+  .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 </style>
 
@@ -161,5 +169,7 @@
     </div>
   </div>
 {:else}
-  <p>Loading...</p>
+  <div class="spinner">
+    <Spinner />
+  </div>
 {/if}
