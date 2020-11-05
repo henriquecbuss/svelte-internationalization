@@ -1,9 +1,9 @@
 // Locales our app supports
 const locales = {
     "pt-br": "Português (BR)",
+    "pt-pt": "Português (PT)",
     "en-us": "English (US)",
     "en-gb": "English (GB)",
-    "pt-pt": "Português (PT)",
     ar: "عربي",
     ja: "日本人",
 };
