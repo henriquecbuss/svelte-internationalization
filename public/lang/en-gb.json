@@ -12,7 +12,7 @@
             "confirm": "Confirm",
             "hello_world": "Hello, world!",
             "interpolating": "Interpolating",
-            "hello_user": "Hello, {name}!"
+            "hello_user": "Hello from GB, {name}!"
         },
 
         "dates": {

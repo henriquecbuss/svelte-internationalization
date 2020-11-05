@@ -1,0 +1,33 @@
+{
+    "app": {
+        "title": "Internationalization"
+    },
+
+    "main": {
+        "strings": {
+            "title": "Strings",
+            "simple": "Simple",
+            "ok": "Ok",
+            "cancel": "Cancel",
+            "confirm": "Confirm",
+            "hello_world": "Hello, world!",
+            "interpolating": "Interpolating",
+            "hello_user": "Howdy, {name}, I'm from 'Merica!"
+        },
+
+        "dates": {
+            "title": "Date and time",
+            "date": "Date",
+            "time": "Time"
+        },
+
+        "numbers": {
+            "title": "Numbers",
+            "plain_number": "Simple numbers",
+            "currency": "Currency",
+            "plural": "Plural numbers",
+            "counter_format": "{n, plural, =0 {No clicks} one {# click} other {# clicks}}"
+        }
+
+    }
+}

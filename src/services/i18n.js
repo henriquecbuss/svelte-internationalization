@@ -36,7 +36,7 @@ const loadJson = url => fetch(url).then((response) => response.json());
 const setupI18n = (options = {}) => {
     // If we're given an explicit locale, we use it. Otherwise, we attempot to
     // auto-detect the user's locale
-    const locale_ = supported(options.withLocale ||
+    const locale_ = supported(options.withLocale || getLocaleFromNavigator() ||
         language(getLocaleFromNavigator()));
 
     // Initialize svelte-i18n
@@ -54,6 +54,7 @@ const setupI18n = (options = {}) => {
         // Download translation file for given locale/language
         return loadJson(messagesFileUrl).then((messages) => {
             _activeLocale = locale_;
+
 
             // Configure svelte-i18n to use the locale
             addMessages(locale_, messages);
