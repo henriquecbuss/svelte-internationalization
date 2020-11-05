@@ -7,6 +7,8 @@ import {
     _,
     date,
     init,
+    time,
+    number,
     locale,
     dictionary,
     addMessages,
@@ -85,7 +87,9 @@ export {
     _,
     dir,
     date,
+    time,
     locale,
+    number,
     setupI18n,
     isLocaleLoaded,
 };

@@ -1,13 +1,32 @@
 {
     "app": {
-        "title": "الناخب المتمرد",
-        "slogan": "شخصياتك المفضلة في حرب النجوم"
+        "title": "تدويل"
     },
 
-    "hello_user": "مرحبًا {name}!",
+    "main": {
+        "strings": {
+            "title": "سلسلة",
+            "simple": "بسيط",
+            "ok": "حسنا",
+            "cancel": "إلغاء",
+            "confirm": "تؤكد",
+            "hello_world": "مرحبا بالعالم!",
+            "interpolating": "تحريف",
+            "hello_user": "مرحبًا {name}!"
+        },
 
-    "footer": "ملحق لمقال <a href=\"{phraseUrl}\">مدونة Phrase</a>. صنع بواسطة <a href=\"{svelteUrl}\">Svelte</a> و <a href=\"{bulmaUrl}\">Bulma</a>.",
+        "dates": {
+            "title": "التاريخ و الوقت",
+            "date": "تاريخ",
+            "time": "زمن"
+        },
 
-    "total_votes": "{n, plural, =0 {لا توجد أصوات بعد} one {صوت #} two {صوتان} few {# أصوات} other {# صوت}}"
-
+        "numbers": {
+            "title": "أعداد",
+            "plain_number": "أرقام بسيطة",
+            "currency": "عملة",
+            "plural": "أعداد الجمع",
+            "counter_format": "{n, plural, =0 {لا توجد أصوات بعد} one {صوت #} two {صوتان} few {# أصوات} other {# صوت}}"
+        }
+    }
 }

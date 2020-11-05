@@ -1,12 +1,33 @@
 {
     "app": {
-        "title": "Rebel Voter",
-        "slogan": "Your favorite Star Wars characters"
+        "title": "Internationalization"
     },
 
-    "hello_user": "Hello, {name}!",
+    "main": {
+        "strings": {
+            "title": "Strings",
+            "simple": "Simple",
+            "ok": "Ok",
+            "cancel": "Cancel",
+            "confirm": "Confirm",
+            "hello_world": "Hello, world!",
+            "interpolating": "Interpolating",
+            "hello_user": "Hello, {name}!"
+        },
 
-    "footer": "Companion to a <a href=\"{phraseUrl}\">Phrase blog</a> article. Made with <a href=\"{svelteUrl}\">Svelte</a> &amp; <a href=\"{bulmaUrl}\">Bulma</a>.",
+        "dates": {
+            "title": "Date and time",
+            "date": "Date",
+            "time": "Time"
+        },
 
-    "total_votes": "{n, plural, =0 {No votes yet} one {# vote} other {# votes}}"
+        "numbers": {
+            "title": "Numbers",
+            "plain_number": "Simple numbers",
+            "currency": "Currency",
+            "plural": "Plural numbers",
+            "counter_format": "{n, plural, =0 {No clicks} one {# click} other {# clicks}}"
+        }
+
+    }
 }
