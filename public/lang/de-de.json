@@ -1,0 +1,34 @@
+{
+    "app": {
+        "title": "Internationalisierung"
+    },
+
+    "main": {
+        "strings": {
+            "title": "Saiten",
+            "simple": "Einfach",
+            "ok": "OK",
+            "cancel": "Stornieren",
+            "confirm": "Bestätigen",
+            "hello_world": "Hallo Welt!",
+            "interpolating": "Interpolieren",
+            "hello_user": "Hallo, {name}!"
+        },
+
+        "dates": {
+            "title": "Datum und Uhrzeit",
+            "date": "Datum",
+            "time": "Zeitplan"
+        },
+
+        "numbers": {
+            "title": "Zahlen",
+            "plain_number": "Einfache Zahlen",
+            "currency": "Währung",
+            "plural": "Mehrere Zahlen",
+            "counter_format": "{n, plural, =0 {Keine klicks} one {# klick} other {# klicks}}"
+        }
+
+    }
+
+}
