@@ -46,6 +46,27 @@
     color: #ff3c00;
   }
 
+  .github-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+  }
+
+  .github-icon:hover {
+    opacity: 1;
+  }
+
+  .github-icon {
+    width: 50px;
+    opacity: 0.3;
+    transition: opacity 250ms ease-in;
+  }
+
   .card-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -85,6 +106,12 @@
   <div class="container">
     <header>
       <h1 class="app-title">{$_('app.title')}</h1>
+      <a
+        class="github-link"
+        href="https://github.com/NeoVier/svelte-internationalization"
+        target="_blank">
+        <img src="assets/github.svg" alt="GitHub" class="github-icon" />
+      </a>
     </header>
     <LocaleSelector
       on:locale-changed={(e) => setupI18n({ withLocale: e.detail })}

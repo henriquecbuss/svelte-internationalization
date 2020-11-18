@@ -1,32 +1,32 @@
 {
-    "app": {
-        "title": "Internacionalização"
+  "app": {
+    "title": "Internacionalização"
+  },
+
+  "main": {
+    "strings": {
+      "title": "Strings",
+      "simple": "Simples",
+      "ok": "Ok",
+      "cancel": "Cancelar",
+      "confirm": "Confirmar",
+      "hello_world": "Olá, mundo!",
+      "interpolating": "Interpolando",
+      "hello_user": "Olá, {name}!"
     },
 
-    "main": {
-        "strings": {
-            "title": "Strings",
-            "simple": "Simples",
-            "ok": "Ok",
-            "cancel": "Cancelar",
-            "confirm": "Confirmar",
-            "hello_world": "Olá, mundo!",
-            "interpolating": "Interpolando",
-            "hello_user": "Olá, {name}!"
-        },
+    "dates": {
+      "title": "Datas e horários",
+      "date": "Datas",
+      "time": "Horários"
+    },
 
-        "dates": {
-            "title": "Datas e horários",
-            "date": "Datas",
-            "time": "Horários"
-        },
-
-        "numbers": {
-            "title": "Números",
-            "plain_number": "Números simples",
-            "currency": "Moedas",
-            "plural": "Números em plural",
-            "counter_format": "{n, plural, =0 {Sem cliques} one {# clique} other {# cliques}}"
-        }
+    "numbers": {
+      "title": "Números",
+      "plain_number": "Números simples",
+      "currency": "Moedas",
+      "plural": "Números em plural",
+      "counter_format": "{n, plural, =0 {Sem cliques} one {# clique} other {# cliques}}"
     }
+  }
 }
